@@ -14,11 +14,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.ApiClient.Net45", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.ApiClient.Net45.Tests", "Checkout.ApiClient.Tests\Checkout.ApiClient.Net45.Tests.csproj", "{EC891A3C-20BF-4AB7-9B39-6C4120F99EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.API", "..\..\..\Users\User\Documents\Visual Studio 2015\Projects\DrinksInventory\DrinksInventory.API\DrinksInventory.API.csproj", "{26D68BB2-46EE-4062-BC5F-65D2E6FCBCB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.API", "DrinksInventory.WEBAPI\DrinksInventory.API\DrinksInventory.API.csproj", "{26D68BB2-46EE-4062-BC5F-65D2E6FCBCB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.API.Tests", "..\..\..\Users\User\Documents\Visual Studio 2015\Projects\DrinksInventory\DrinksInventory.API.Tests\DrinksInventory.API.Tests.csproj", "{118D88E6-87C5-40E0-A439-01EB800E65B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.API.Tests", "DrinksInventory.WEBAPI\DrinksInventory.API.Tests\DrinksInventory.API.Tests.csproj", "{118D88E6-87C5-40E0-A439-01EB800E65B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.Data", "..\..\..\Users\User\Documents\Visual Studio 2015\Projects\DrinksInventory\DrinksInventory.Data\DrinksInventory.Data.csproj", "{3E97F616-41EF-44F4-932C-E9A52EA5A7B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksInventory.Data", "DrinksInventory.WEBAPI\DrinksInventory.Data\DrinksInventory.Data.csproj", "{3E97F616-41EF-44F4-932C-E9A52EA5A7B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
