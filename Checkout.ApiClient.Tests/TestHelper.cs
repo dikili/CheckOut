@@ -286,9 +286,11 @@ namespace Tests
 
         public static DrinkCreate GetDrinkCreateModel()
         {
-        
+            Random rand=new Random();
+           var v1= rand.Next(1, 66).ToString();
+            var v2 = rand.Next(5, 99).ToString();
             DrinkCreate drink=new DrinkCreate();
-            drink.DrinkName = "someName";
+            drink.DrinkName =v1+ "someName"+v2;
             drink.Quantity = 3;
             return drink;
            
