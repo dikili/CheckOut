@@ -37,7 +37,11 @@
         private static string _recurringCustomerPaymentPlanApiUri;
         private static string _visaCheckout;
 
-        private static string _drinksCheckOut;
+        private static string _drinkCreateUri;
+        private static string _drinkRemoveUri;
+        private static string _drinkUpdateUri;
+        private static string _drinkGetUri;
+        private static string _drinkAll;
         public static void ResetApiUrls()
         {
             _cardTokensApiUri = null;
@@ -69,7 +73,12 @@
             _recurringCustomerPaymentPlanSearchApiUri = null;
             _recurringCustomerPaymentPlanApiUri = null;
             _localPaymentChargesApiUri = null;
-            _drinksCheckOut = null;
+
+            _drinkCreateUri = null;
+            _drinkRemoveUri = null;
+            _drinkUpdateUri = null;
+            _drinkGetUri = null;
+            _drinkAll = null;
         }
 
         public static string Charges
@@ -188,8 +197,34 @@
 
         public static string DrinksCreateUrl
           =>
-              _drinksCheckOut ??
-              (_drinksCheckOut =
-                  string.Concat(AppSettings.BaseApiUri, "/api/PostDrink/{name}"));
+              _drinkCreateUri ??
+              (_drinkCreateUri =
+                  string.Concat(AppSettings.BaseApiUri, "api/PostDrink/{0}/{1}"));
+    
+
+    public static string DrinkDeleteUrl
+        =>
+            _drinkRemoveUri ??
+            (_drinkRemoveUri =
+                string.Concat(AppSettings.BaseApiUri, "api/DeleteADrink/{0}"));
+
+        public static string DrinkUpdateUrl
+       =>
+           _drinkUpdateUri ??
+           (_drinkUpdateUri =
+               string.Concat(AppSettings.BaseApiUri, "api/PutDrink/{0}/{1}"));
+
+        public static string DrinkGetUrl
+    =>
+        _drinkGetUri ??
+        (_drinkGetUri =
+            string.Concat(AppSettings.BaseApiUri, "api/GetDrink/{0}"));
+
+        public static string DrinkAllUrl
+  =>
+      _drinkAll ??
+      (_drinkAll =
+          string.Concat(AppSettings.BaseApiUri, "api/GetDrinks"));
+
     }
 }

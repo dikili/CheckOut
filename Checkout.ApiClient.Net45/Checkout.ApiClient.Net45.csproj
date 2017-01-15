@@ -87,7 +87,7 @@
     </Compile>
     <Compile Include="ApiServices\Drinks\DrinkInventoryService.cs" />
     <Compile Include="ApiServices\Drinks\RequestModels\DrinkCreate.cs" />
-    <Compile Include="ApiServices\Drinks\ResponseModels\DrinkCreatedResp.cs" />
+    <Compile Include="ApiServices\Drinks\ResponseModels\DrinkResp.cs" />
     <Compile Include="ApiServices\Lookups\LookupsService.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\CountryInfo.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\LocalPaymentData.cs" />

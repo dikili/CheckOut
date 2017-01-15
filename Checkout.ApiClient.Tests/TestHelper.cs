@@ -8,6 +8,7 @@ using Checkout.ApiServices.Tokens.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Checkout.ApiServices.Drinks;
 using Tests.Utils;
 using FilterAction = Checkout.ApiServices.SharedModels.Action;
 
@@ -283,6 +284,24 @@ namespace Tests
             return card;
         }
 
+        public static DrinkCreate GetDrinkCreateModel()
+        {
+        
+            DrinkCreate drink=new DrinkCreate();
+            drink.DrinkName = "someName";
+            drink.Quantity = 3;
+            return drink;
+           
+
+        }
+        public static int GiveRandomDrinkId()
+        {
+
+            //implement a logic to always return an existing Id
+            Random rand = new Random();
+            return rand.Next(1, 4);
+
+        }
         public static CardUpdate GetCardUpdateModel(bool setDefaultCard = false)
         {
             CardUpdate card = new CardUpdate();

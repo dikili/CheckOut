@@ -32,6 +32,12 @@ namespace Checkout
             get { return _secretKey ?? (_secretKey = ReadConfig("Checkout.SecretKey", true)); }
             set { _secretKey = value; }
         }
+
+        public static string DrinkAuthKey
+        {
+            get { return _secretKey ?? (_secretKey = ReadConfig("Checkout.DrinkAuth", true)); }
+            set { _secretKey = value; }
+        }
         public static string PublicKey
         {
             get { return _publicKey ?? (_publicKey = ReadConfig("Checkout.PublicKey", true)); }
