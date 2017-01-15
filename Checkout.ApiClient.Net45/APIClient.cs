@@ -27,6 +27,7 @@ namespace Checkout
         public LookupsService LookupsService { get { return _lookupsService ?? (_lookupsService = new LookupsService()); } }
         public RecurringPaymentsService RecurringPaymentsService { get { return _recurringPaymentsService ?? (_recurringPaymentsService = new RecurringPaymentsService()); } }
 
+        
         public APIClient()
         {
             if (AppSettings.Environment == Environment.Undefined)

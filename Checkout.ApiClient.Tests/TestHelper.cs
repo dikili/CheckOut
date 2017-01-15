@@ -330,7 +330,17 @@ namespace Tests
                 Metadata = new Dictionary<string, string>() { { "channelInfo", RandomData.CompanyName } }
             };
         }
-
+        //public static CustomerUpdate GetCustomerUpdateModel()
+        //{
+        //    return new CustomerUpdate()
+        //    {
+        //        Name = RandomData.FullName,
+        //        Description = RandomData.String,
+        //        Email = RandomData.Email,
+        //        Phone = GetPhone(),
+        //        Metadata = new Dictionary<string, string>() { { "channelInfo", RandomData.CompanyName } }
+        //    };
+        //}
         private static Phone GetPhone()
         {
             return new Phone()

@@ -85,6 +85,9 @@
     <Compile Include="ApiServices\Customers\ResponseModels\CustomerList.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ApiServices\Drinks\DrinkInventoryService.cs" />
+    <Compile Include="ApiServices\Drinks\RequestModels\DrinkCreate.cs" />
+    <Compile Include="ApiServices\Drinks\ResponseModels\DrinkCreatedResp.cs" />
     <Compile Include="ApiServices\Lookups\LookupsService.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\CountryInfo.cs" />
     <Compile Include="ApiServices\Lookups\ResponseModels\LocalPaymentData.cs" />
@@ -176,6 +179,9 @@
   <ItemGroup>
     <Compile Include="ApiServices\SharedModels\HttpResponse.cs" />
     <Compile Include="ApiServices\SharedModels\ResponseError.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
