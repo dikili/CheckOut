@@ -10,10 +10,10 @@ namespace Checkout.ApiServices.Drinks
 {
     class DrinkInventoryService
     {
-        public HttpResponse<DrinkCreatedResp> CreateCard( DrinkCreate requestModel)
+        public HttpResponse<DrinkCreatedResp> CreateDrink( DrinkCreate requestModel)
         {
             var createCardUri = string.Format(ApiUrls.Cards);
-            return new ApiHttpClient().PostRequest<DrinkCreate>(createCardUri, AppSettings.SecretKey, requestModel);
+            return null;//new ApiHttpClient().PostRequest<DrinkCreate>(createCardUri, AppSettings.SecretKey, requestModel);
         }
     }
 }
