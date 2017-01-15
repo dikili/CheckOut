@@ -38,6 +38,7 @@ You will be required to **set your secret key** when initialising a new **APICli
     <add key="Checkout.MaxResponseContentBufferSize" value="10240" />
     <add key="Checkout.DebugMode" value="true" />
     <add key="Checkout.Environment" value="Sandbox" />
+	<add key="Checkout.DrinkAuth" value="Basic Y2hlY2tvdXQ6bWU="/>
 </appSettings>
 ```
 #### Constructor configuration 
@@ -55,6 +56,7 @@ APIClient(string secretKey)
 #### Endpoints 
 There are various API endpoints that the **APIClient** interacts with. 
 
+ -Drinks
 - Charges
 - Customers
 - Cards
