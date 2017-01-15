@@ -48,7 +48,7 @@ namespace Tests.DrinkServiceTests
 
             response.Should().NotBeNull();
             response.HttpStatusCode.Should().Be(HttpStatusCode.OK);
-            response.Should().NotBe(response.Model);
+            response.Model.Should().BeTrue();
         }
 
 
